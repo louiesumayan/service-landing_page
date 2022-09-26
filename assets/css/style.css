@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 body {
   font-size: 1.25rem;
@@ -127,7 +128,46 @@ footer p {
 .aside {
   width: 30%;
 }
+
+/* service section */
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  gap: 15px;
+}
+.services {
+  width: 70%;
+}
+.aside-container {
+  width: 25%;
+  text-align: center;
+  padding: 1em;
+}
+.aside-bg {
+  background-color: #35424a;
+  color: #fff;
+  width: 50%;
+}
+.services li {
+  background-color: #f8f8f8;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
 @media (max-width: 991px) {
+  .service-container {
+    flex-direction: column;
+  }
+  .services,
+  .aside-container {
+    width: 100%;
+  }
+  .aside-bg,
+  input[type="text"] {
+    width: 100%;
+  }
   .main-col-container {
     flex-direction: column;
   }
