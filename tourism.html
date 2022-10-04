@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/qcLOGO.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quezon City | Tourist site</title>
+    <!--CSS STYLE-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+      .btn {
+        color: #fff;
+        padding: 0.8em 1.7em;
+        background: #333;
+        transition: all 1.2s;
+      }
+      .img-logo {
+        width: 80px;
+      }
+      .btn:hover,
+      .btn:focus {
+        color: #000;
+        background-color: #fff;
+      }
+      .header {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .header-container,
+      .navbar-menu,
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-text {
+        color: #fff;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .navbar-menu li {
+        margin-left: 1em;
+      }
+      nav a {
+        color: #fff;
+        transition: all 1.2s;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #b1d8b7;
+        border-bottom: 1.5px solid #fff;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+      }
+      /* main section */
+      .hero-section {
+        margin-top: 6em;
+        text-align: center;
+      }
+      /* main - article section */
+      .hero-container-flex article > img,
+      .araneta-img {
+        float: center;
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+      }
+      article > h1 {
+        background-color: #333;
+        color: #fff;
+        padding: 1em 0.5em;
+      }
+
+      .hero-container-flex {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+        gap: 10px;
+      }
+      .aside {
+        background-color: #f3f3f3;
+        transition: all 0.5s;
+        border: 0.1px solid #bbb;
+        padding: 1em;
+        margin: 1em;
+      }
+      .aside:hover {
+        cursor: pointer;
+        transform: scale(1.07);
+      }
+      .last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            class="img-logo"
+            src="./assets/img/qcLOGO.png"
+            alt="quezon city logo"
+          />
+          <p class="logo-text">Quezon City</p>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-menu">
+            <li class="nav-item-list">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item-list"><a href="about.html">ABOUT</a></li>
+            <li class="nav-item-list"><a href="tourism.html">TOURISM</a></li>
+            <li class="nav-item-list"><a href="culture.html">CULTURE </a></li>
+            <li class="nav-item-list">
+              <a href="Form_Exercise.html">BOOK NOW!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!---MAIN--->
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1>
+            10 Places To Visit In Quezon City In 2022 You’ll Fall Head Over
+            Heels In Love With
+          </h1>
+          <img src="./assets/img/qc-circle.jpg" alt="quezon city, circle" />
+          <p>
+            Are you planning your next trip to Quezon City in the Philippines?
+            You should be aware of this fact that it once used to serve as the
+            capital city of the Philippines during the period from 1948-1976.
+            There are many places to visit in Quezon City. Their interesting
+            architecture keeps you hooked. With a myriad of tourist attractions,
+            this city receives both domestic as well as countless international
+            tourists throughout the year. Besides its popular attractions,
+            delicious dishes prepared in the finest restaurants here are simply
+            delightful in their taste, freshness and flavors.
+          </p>
+          <hr />
+          <h2>Top 10 Places To Visit In Quezon City</h2>
+          <p>
+            As you know that Quezon City was the capital of the Philippines for
+            almost 28 years before Manila, thus it still boasts of several
+            historical places to visit. In addition, it has exceptional road
+            connectivity as well. Below are some of the best places to visit in
+            Quezon City for a once in a lifetime experience.
+          </p>
+          <div class="hero-container-flex">
+            <article class="aside">
+              <h1>Art In Island</h1>
+              <img
+                src="./assets/img/Art.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                Art in Island receives tourists round the year from all corners
+                of the world and is one of the best places to visit in Quezon
+                City Popularly known as the world’s first selfie museum.
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Eastwood City</h1>
+              <img
+                src="./assets/img/eastwood-city.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                Your trip to Quezon City in the Philippines will remain
+                incomplete if you don’t discover Eastwood City. This 17 hectares
+                commercial and residential town is home to several towers
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Sining Kamalig</h1>
+              <img
+                src="./assets/img/sining-kamalig.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                One of the most popular art galleries of the Philippines, Sining
+                Kamalig appeals to each and every visitor. Although it is not
+                that big, it is full of things which are going to entertain,
+                stun and inspire you.
+              </p>
+            </article>
+          </div>
+          <div class="hero-container-flex">
+            <article class="aside">
+              <h1>La Mesa Eco Park</h1>
+              <img
+                src="./assets/img/eco-park.jpeg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                Hiking, mountain biking, horseback riding, rappelling,
+                zip-lining, and fishing are some of the most popular activities
+                which tourists can involve in the La Mesa Eco Park in the
+                Philippines
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Quezon Memorial Circle</h1>
+              <img
+                src="./assets/img/qc-circle.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                The Quezon Memorial Circle is a National Park in the
+                Philippines. Housing a small amusement park for all adventure
+                and thrill-seekers, you can plan a day outing to this spot.
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Greenhills Shopping Center</h1>
+              <img
+                src="./assets/img/greenhills.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                One of the most popular shopping mall complexes in the city,
+                Greenhills Shopping Center is worth a trip. The locals and
+                tourists visit this mall for shopping, dining, and rejuvenation
+                through the beauty & wellness services.
+              </p>
+            </article>
+          </div>
+          <div class="hero-container-flex">
+            <article class="aside">
+              <h1>SM Megamall</h1>
+              <img
+                src="./assets/img/sm.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                The second largest shopping mall in the Philippines and the 5th
+                largest in the world, SM Megamall is worth a trip It is a
+                perfect destination for shopaholics. With an area of
+                approximately 10 hectares,
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Maginhawa Food Park</h1>
+              <img
+                src="./assets/img/maginhawa.png"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                Maginhawa Food Park is home to several world-class restaurants
+                and eateries that help the tourists and locals to taste the
+                hand-prepared food made from the local and seasonal ingredients.
+              </p>
+            </article>
+            <article class="aside">
+              <h1>Mt. Carmel Shrine</h1>
+              <img
+                src="./assets/img/church.jpg"
+                alt="art iland in the quezon city"
+              />
+              <p>
+                If you are looking for a place to spend some moments in
+                solitude, then Mt. Carmel Shrine could be a perfect destination
+                for you. This old church is magnificent, and it also helps you
+                to feel a connection with Almighty God.
+              </p>
+            </article>
+          </div>
+          <div class="hero-container-flex">
+            <article class="aside last-child">
+              <h1>Smart Araneta Coliseum</h1>
+              <div>
+                <img
+                  class="araneta-img"
+                  src="./assets/img/araneta.jpg"
+                  alt="art iland in the quezon city"
+                />
+              </div>
+              <p>
+                Known as The Big Dome, The Smart Araneta Coliseum is an indoor
+                multi-purpose sports area in the Philippines. Being one of the
+                largest indoor areas in Asia today, it offers you the facility
+                of playing many games at once.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <p>Quezon City</p>
+    </footer>
+  </body>
+</html>

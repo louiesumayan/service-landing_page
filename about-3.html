@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/qcLOGO.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | QUEZON CITY</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+      .btn {
+        color: #fff;
+        padding: 0.8em 1.7em;
+        background: #333;
+        transition: all 1.2s;
+      }
+      .img-logo {
+        width: 80px;
+      }
+      .btn:hover,
+      .btn:focus {
+        color: #000;
+        background-color: #fff;
+      }
+      .header {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .header-container,
+      .navbar-menu,
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-text {
+        color: #fff;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .navbar-menu li {
+        margin-left: 1em;
+      }
+      nav a {
+        color: #fff;
+        transition: all 1.2s;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #b1d8b7;
+        border-bottom: 1.5px solid #fff;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+      }
+      /* main section */
+      .main_bg {
+        background: url(./assets/img/qc-circle.jpg) no-repeat top/cover;
+        height: 60vh;
+      }
+      .main_bg p {
+        text-align: center;
+        margin: 0;
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        padding-top: 4em;
+        text-shadow: 5px 7px #020202;
+      }
+      .about-text {
+        padding: 2em;
+        margin: 0 auto;
+        font-weight: 100;
+        text-align: center;
+        width: 60%;
+      }
+      .main-container {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-container h1 {
+        text-align: center;
+      }
+      .vision,
+      .mission {
+        padding: 3em;
+        margin: 0.8em;
+        background-color: #efefef;
+      }
+      .heading-text {
+        font-weight: bold;
+        font-size: 1.6rem;
+        border-bottom: 1px solid #000;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            class="img-logo"
+            src="./assets/img/qcLOGO.png"
+            alt="quezon city logo"
+          />
+          <p class="logo-text">Quezon City</p>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-menu">
+            <li class="nav-item-list">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item-list"><a href="about.html">ABOUT</a></li>
+            <li class="nav-item-list"><a href="tourism.html">TOURISM</a></li>
+            <li class="nav-item-list"><a href="culture.html">CULTURE </a></li>
+            <li class="nav-item-list">
+              <a href="Form_Exercise.html">BOOK NOW!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--ABOUT SECTION-->
+    <section class="main_bg">
+      <p>welcome to quezon city</p>
+    </section>
+    <p class="about-text heading-text">ABOUT THE CITY</p>
+    <p class="about-text">
+      Quezon City is situated on the northeast portion of Metro Manila. It is
+      bounded on the north by Caloocan City and San Jose del Monte City in
+      Bulacan Province, on the east by San Mateo and Marikina, on the south by
+      Pasig and Mandaluyong, San Juan and Manila, and on the west by Valenzuela,
+      Caloocan, and Manila. Its northeastern and eastern boundaries are defined
+      by the Novaliches Watershed and the Marikina River. With an area of
+      16,112.58 hectares (based on 1995 GIS graphical plot), it is the largest
+      among the sixteen (16) cities and one (1) municipality in the region and
+      is almost one-fourth the size of Metro Manila.
+    </p>
+    <!--MAIN SECTION-->
+    <main>
+      <div class="container main-container">
+        <section class="vision">
+          <h1>VISION</h1>
+          <p>
+            To sustain Quezon City as Quality Community – a progressive and
+            peaceful, clean and orderly place, conducive and hospitable to
+            living, employment employment, and business.
+          </p>
+        </section>
+        <section class="mission">
+          <h1>MISSION</h1>
+          <p>
+            To provide quality service, making Quezon City an ideal community
+            where people live, work and do business in a hospitable,
+            progressive, and peaceful environment.
+          </p>
+        </section>
+      </div>
+      <p class="about-text heading-text">QC PROFILE</p>
+      <div class="container main-container">
+        <section class="vision">
+          <h1>HISTORY</h1>
+          <p>
+            On September 28, 1939, the National Assembly approved Bill No. 1206
+            as Commonwealth Act No. 502, otherwise known as the Charter of
+            Quezon City. Signed by President Quezon on October 12, 1939, the law
+            defined the boundaries of the City and gave it an area of 7,000
+            hectares carved out of the towns of Caloocan, San Juan, Marikina,
+            Pasig, and Mandaluyong, all in Rizal Province. Continue Reading
+          </p>
+        </section>
+        <section class="mission">
+          <h1>ECONOMY</h1>
+          <p>
+            The City’s economy continues to be dominated by small to
+            medium-scale business establishments engaged mostly in the
+            distribution of finished products and in the provision of basic
+            services. There has been an increasing trend in the number of
+            registered businesses from 2008-2013, with the latest total count
+            reported at 64,515 with 13,417 as new and 51,098 renewals. Continue
+            Reading
+          </p>
+        </section>
+      </div>
+    </main>
+    <!--FOOTER SECTION-->
+    <footer>
+      <p>Quezon City</p>
+    </footer>
+  </body>
+</html>

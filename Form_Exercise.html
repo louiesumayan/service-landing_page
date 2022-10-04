@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/qcLOGO.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>BOOK NOW!</title>
+    <!--CSS STYLE NOT RESPONSIVE-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+      form {
+        margin-top: 5em;
+      }
+      .btn {
+        color: #fff;
+        padding: 0.8em 1.7em;
+        background: #333;
+        transition: all 1.2s;
+      }
+      .img-logo {
+        width: 80px;
+      }
+      .btn:hover,
+      .btn:focus {
+        color: #000;
+        background-color: #fff;
+      }
+      .header {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .header-container,
+      .navbar-menu,
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-text {
+        color: #fff;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .navbar-menu li {
+        margin-left: 1em;
+      }
+      nav a {
+        color: #fff;
+        transition: all 1.2s;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #b1d8b7;
+        border-bottom: 1.5px solid #fff;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <center>
+        <header class="header">
+          <div class="container header-container">
+            <div class="logo">
+              <img
+                class="img-logo"
+                src="img/qcLOGO.png"
+                alt="quezon city logo"
+              />
+              <p class="logo-text">Quezon City</p>
+            </div>
+
+            <nav class="navbar">
+              <ul class="navbar-menu">
+                <li class="nav-item-list">
+                  <a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item-list"><a href="about.html">ABOUT</a></li>
+                <li class="nav-item-list">
+                  <a href="tourism.html">TOURISM</a>
+                </li>
+                <li class="nav-item-list">
+                  <a href="culture.html">CULTURE </a>
+                </li>
+                <li class="nav-item-list">
+                  <a href="Form_Exercise.html">BOOK NOW!</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <form action="#" method="#">
+          <table style="border: 1px solid red">
+            <thead>
+              <th colspan="2">BASIC INFORMATION</th>
+            </thead>
+            <tr>
+              <td>FIRSTNAME:</td>
+              <td><input type="text" name="fname" id="fname" /></td>
+            </tr>
+            <tr>
+              <td>LASTNAME:</td>
+              <td><input type="text" name="lname" id="lname" /></td>
+            </tr>
+            <tr>
+              <td>AGE:</td>
+              <td>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  min="18"
+                  max="65"
+                  cols="21"
+                  rows="5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>BIRTHDATE:</td>
+              <td><input type="date" name="fname" id="fname" /></td>
+            </tr>
+            <tr>
+              <td>GENDER:</td>
+              <td>
+                <select name="gender" id="gender">
+                  <option value="male">MALE</option>
+                  <option value="female">FEMALE</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>2X2 PICTURE:</td>
+              <td><input type="file" name="picture" id="picture" /></td>
+            </tr>
+            <tr>
+              <td>TELL ME ABOUT YOUR SELF:</td>
+              <td>
+                <textarea
+                  name="aboutSelf"
+                  id="aboutSelf"
+                  cols="200"
+                  rows="36"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="button" value="Submit" /></td>
+            </tr>
+          </table>
+        </form>
+      </center>
+    </div>
+    <!-- <ul>
+      <li>apple</li>
+      <li>banana</li>
+      <li>cherry</li>
+      <li>donut</li>
+    </ul>
+    <ul class="try">
+      <li>apple</li>
+      <li>banana</li>
+      <li>cherry</li>
+      <li>donut</li>
+    </ul> -->
+    <footer>
+      <p>Quezon City</p>
+    </footer>
+  </body>
+</html>

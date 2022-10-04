@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="./img/qcLOGO.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Quezon City</title>
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS STYLE-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+      .btn {
+        color: #fff;
+        padding: 0.8em 1.7em;
+        background: #333;
+        transition: all 1.2s;
+      }
+      .btn:hover,
+      .btn:focus {
+        color: #000;
+        background-color: #fff;
+      }
+      .header {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .img-logo {
+        width: 80px;
+      }
+      .feature-content-img {
+        width: 40%;
+      }
+      .container {
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .header-container,
+      .navbar-menu,
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-text {
+        color: #fff;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .navbar-menu li {
+        margin-left: 1em;
+      }
+      nav a {
+        color: #fff;
+        transition: all 1.2s;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #b1d8b7;
+        border-bottom: 1.5px solid #fff;
+      }
+      .hero {
+        max-width: 60%;
+        color: #fff;
+        font-size: 1.3rem;
+        text-shadow: 2.5px 3px #020202;
+      }
+      .hero-container {
+        background: url(./assets/img/qc-hero-bg.jpg) no-repeat center/cover;
+        height: 70vh;
+        padding: 9em;
+      }
+      .feature-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        gap: 1em;
+        margin: 1em 1.5em;
+      }
+      .feature-content p {
+        margin: 1em;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+      }
+      .tourism-spot-section {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            class="img-logo"
+            src="./assets/img/qcLOGO.png"
+            alt="quezon city logo"
+          />
+          <p class="logo-text">Quezon City</p>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-menu">
+            <li class="nav-item-list"><a href="index.html">HOME</a></li>
+            <li class="nav-item-list"><a href="about-3.html">ABOUT</a></li>
+            <li class="nav-item-list"><a href="tourism.html">TOURISM</a></li>
+            <li class="nav-item-list"><a href="culture.html">CULTURE </a></li>
+            <li class="nav-item-list">
+              <a href="Form_Exercise.html">BOOK NOW!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--MAIN SECTION-->
+    <main>
+      <section class="hero-container">
+        <div class="container">
+          <article class="hero">
+            <h1>Quezon City Travel Guide: Largest City in the Philippines</h1>
+            <p class="hero-text">
+              The vibrant Quezon City (QC) is the largest and most populous city
+              in Metro Manila that offers many attractions for travelers of all
+              ages. It has a rich cultural heritage where you will discover many
+              exciting places, exciting things to do, and delicious food to eat.
+            </p>
+            <a href="Form_Exercise.html" class="btn">BOOK NOW!</a>
+          </article>
+        </div>
+      </section>
+      <section class="tourism-spot-section">
+        <p class="spot-section">Places To Visit In Quezon City</p>
+      </section>
+
+      <div class="feature-content">
+        <section class="feature-content">
+          <img
+            class="feature-content-img"
+            src="./assets/img/qc-circle.jpg"
+            alt="quezon city circle"
+          />
+          <p>
+            <strong
+              >​Explore the hustle and bustle of Quezon City, an urban center in
+              Metro Manila. Find out the easiest way to get into the city, what
+              attractions and activities to explore, where to stay, and where to
+              eat and drink if you’re looking for a fun night.</strong
+            >
+          </p>
+        </section>
+
+        <section class="feature-content">
+          <img
+            class="feature-content-img"
+            src="./assets/img/eco-park.jpeg"
+            alt="quezon city circle"
+          />
+          <p>
+            Quezon City's La Mesa Ecopark is a well-developed sanctuary through
+            a collaboration between MWSS ABS-CBN and Quezon City around the La
+            Mesa Watershed. The 33-hectare public park is aimed at preserving
+            and protecting the La Mesa Watershed not only by generating revenue,
+            but also by fostering environmental awareness and environmental
+            conservation. The EcoPark's primary focus is on outdoor recreation
+            and forestry. Students families of environmentalist fitness tourist
+            buffs flock the park every day, seeing it as an alternative to the
+            metropolis shopping malls.
+          </p>
+        </section>
+      </div>
+
+      <div class="feature-content">
+        <section class="feature-content">
+          <p>
+            <strong>
+              GameOver PH is a gaming bar and restaurant that provides you with
+              the best dining and gaming experience. GameOver offers scrumptious
+              meals and crafted drinks for a price range of P208 to P624 and
+              different games like board games consoles and arcades. This place
+              is best for hanging out with friends and bonding with families.
+              Their service is top notch because GameOver PH wants to provide
+              their customers with that "homey" feels. They also host parties
+              and event celebrations.</strong
+            >
+          </p>
+          <img
+            class="feature-content-img"
+            src="./assets/img/GameOver-PH.jpg"
+            alt="quezon city circle"
+          />
+        </section>
+
+        <section class="feature-content">
+          <p>
+            Art in Island Museum It was founded by Yun Jae Kyoung together with
+            a team of 18 Korean master painters who were specially flown in for
+            the project. They all worked together and created the paintings in
+            the museum. The museum had over 200 masterpieces including
+            reproduction of works of masters animals Egyptian ruins and
+            others—most of them are 3D! These arts give the illusion of depth
+            when viewed from a certain angle and is designed to serve as a
+            backdrop for photo opportunities.
+          </p>
+          <img
+            class="feature-content-img"
+            src="./assets/img/Art.jpg"
+            alt="quezon city circle"
+          />
+        </section>
+      </div>
+    </main>
+    <!--FOOTER SECTION-->
+    <footer>
+      <p>Quezon City</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- style -->
+    <style>
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .navbar {
+        padding: 0.5em;
+      }
+      .container-fluid {
+        padding: 0;
+      }
+      .logo {
+        width: 50px;
+      }
+      .w-100 {
+        height: 75vh;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 50px;
+        gap: 10px;
+        justify-content: center;
+      }
+      .card {
+        padding: 0;
+      }
+      .content-img {
+        width: 100%;
+      }
+      .content-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.725em;
+        gap: 0.5em;
+      }
+      .text-container {
+        padding: 2em;
+        background-color: #f1f1f1;
+      }
+      .footer {
+        background-color: cyan;
+        padding: 0.2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.275rem;
+      }
+      .footer p {
+        margin: 0;
+      }
+      @media (max-width: 960px) {
+        .w-100 {
+          height: auto;
+        }
+        .grid-container {
+          display: flex;
+          flex-direction: column;
+
+          align-items: center;
+        }
+
+        .hide {
+          display: none;
+        }
+        .content-grid-container {
+          grid-template-columns: 1fr;
+        }
+        .child-4 {
+          order: 1;
+        }
+      }
+    </style>
+    <title>WWE SMACKDOWN</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo"
+            src="./assets/img/wwe-logo.ico"
+            alt="wwe logo"
+          />WWE</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-1.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+                <li><a class="dropdown-item" href="#">action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success bg-danger text-light"
+              type="submit"
+            >
+              Search
+            </button>
+            <button
+              class="btn btn-outline-success bg-danger text-light"
+              type="submit"
+            >
+              <a href="login.html">Login</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <div class="container-fluid max-height">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./assets/img/img-1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="text-shadow: 2px 2px #000000">
+                FOX WWE Friday Night SmackDown
+              </h5>
+              <p>
+                The Superstars of World Wrestling Entertainment do battle in
+                elaborate, long-running rivalries.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/img/img-2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="
+                  color: #000;
+                  font-weight: 700;
+                  text-shadow: 2px 2px #ffffff;
+                "
+              >
+                Friday Night SmackDown
+              </h5>
+              <p style="color: #000; font-weight: 700">
+                WWE is coming home to Minneapolis! Don't miss the chance to see
+                your favorite SMACKDOWN Superstars in action.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/img/img-3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5
+                style="
+                  color: #fff;
+                  font-weight: 900;
+                  text-shadow: 2px 2px #f30101;
+                "
+              >
+                Five-Way Match For Intercontinental Title
+              </h5>
+              <p>
+                A huge match has been added to tonight’s episode of WWE
+                SmackDown.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- accordion and card -->
+    <!-- accordion -->
+    <div class="row container-fluid">
+      <div class="grid-container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 1-->
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <!-- card 2-->
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <!-- card 3-->
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <!-- card 4-->
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="content-container p-4 bg-light hide">
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero
+            ullam adipisci vel magnam sit autem laborum dicta possimus
+            perferendis architecto nobis est corporis placeat impedit quod
+            repellendus et, tenetur, exercitationem dignissimos iste fugit! Ut
+            illum ad ipsa natus amet aspernatur, sequi velit rem, culpa eaque
+            saepe qui iste accusantium!
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/img-3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="about-1.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- pagination -->
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <div class="container-fluid content-grid-container">
+      <!-- item 1 -->
+      <img class="content-img" src="./assets/img/img-1.jpg" alt="" />
+      <div class="text-container">
+        <p class="display-6">FOX WWE Friday Night SmackDown</p>
+        <br />
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, et
+          delectus alias voluptatum sunt eligendi illo esse sequi, placeat est
+          odio, assumenda accusamus dolore vero hic fuga repellat perferendis ut
+          tempore consectetur nisi itaque laboriosam qui magnam? Fugiat velit
+          tempora nulla eaque deserunt exercitationem magnam porro esse,
+          doloribus ipsam, dolore eum tenetur. Voluptate incidunt nulla
+          dignissimos, quod accusamus sed, aspernatur debitis voluptates
+          suscipit impedit eligendi quasi? Dolor quod, harum sed molestias
+          voluptas nemo eius, necessitatibus laborum numquam impedit magnam qui
+          optio, corrupti debitis? Amet veritatis dicta excepturi, tempore,
+          dolore nisi, id quaerat distinctio maiores ipsum numquam fugiat rem.
+          Cupiditate, sint ducimus. Iure, nihil mollitia adipisci, totam minima
+          quia perferendis consectetur voluptas libero, cum eligendi in!
+          Quibusdam distinctio voluptatibus aliquid maxime soluta. Esse corporis
+          commodi cumque quibusdam, inventore fuga provident dicta error iure
+          repudiandae. Mollitia dolorem, neque saepe, perspiciatis delectus
+          distinctio ab nobis nemo explicabo molestias in eius expedita velit
+          omnis.
+        </p>
+      </div>
+      <!-- item 2 -->
+      <div class="text-container">
+        <p class="display-6">Friday Night SmackDown</p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, et
+          delectus alias voluptatum sunt eligendi illo esse sequi, placeat est
+          odio, assumenda accusamus dolore vero hic fuga repellat perferendis ut
+          tempore consectetur nisi itaque laboriosam qui magnam? Fugiat velit
+          tempora nulla eaque deserunt exercitationem magnam porro esse,
+          doloribus ipsam, dolore eum tenetur. Voluptate incidunt nulla
+          dignissimos, quod accusamus sed, aspernatur debitis voluptates
+          suscipit impedit eligendi quasi? Dolor quod, harum sed molestias
+          voluptas nemo eius, necessitatibus laborum numquam impedit magnam qui
+          optio, corrupti debitis? Amet veritatis dicta excepturi, tempore,
+          dolore nisi, id quaerat distinctio maiores ipsum numquam fugiat rem.
+          Cupiditate, sint ducimus. Iure, nihil mollitia adipisci, totam minima
+          quia perferendis consectetur voluptas libero, cum eligendi in!
+          Quibusdam distinctio voluptatibus aliquid maxime soluta. Esse corporis
+          commodi cumque quibusdam, inventore fuga provident dicta error iure
+          repudiandae. Mollitia dolorem, neque saepe, perspiciatis delectus
+          distinctio ab nobis nemo explicabo molestias in eius expedita velit
+          omnis.
+        </p>
+      </div>
+      <img class="content-img child-4" src="./assets/img/img-2.jpg" alt="" />
+      <!-- item 3 -->
+      <img class="content-img" src="./assets/img/img-3.jpg" alt="" />
+      <div class="text-container">
+        <p class="display-6">Five-Way Match For Intercontinental Title</p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, et
+          delectus alias voluptatum sunt eligendi illo esse sequi, placeat est
+          odio, assumenda accusamus dolore vero hic fuga repellat perferendis ut
+          tempore consectetur nisi itaque laboriosam qui magnam? Fugiat velit
+          tempora nulla eaque deserunt exercitationem magnam porro esse,
+          doloribus ipsam, dolore eum tenetur. Voluptate incidunt nulla
+          dignissimos, quod accusamus sed, aspernatur debitis voluptates
+          suscipit impedit eligendi quasi? Dolor quod, harum sed molestias
+          voluptas nemo eius, necessitatibus laborum numquam impedit magnam qui
+          optio, corrupti debitis? Amet veritatis dicta excepturi, tempore,
+          dolore nisi, id quaerat distinctio maiores ipsum numquam fugiat rem.
+          Cupiditate, sint ducimus. Iure, nihil mollitia adipisci, totam minima
+          quia perferendis consectetur voluptas libero, cum eligendi in!
+          Quibusdam distinctio voluptatibus aliquid maxime soluta. Esse corporis
+          commodi cumque quibusdam, inventore fuga provident dicta error iure
+          repudiandae. Mollitia dolorem, neque saepe, perspiciatis delectus
+          distinctio ab nobis nemo explicabo molestias in eius expedita velit
+          omnis.
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <p>COPYRIGHT &copy; KODEGO EXERCISE_09</p>
+      <p>Louie Pogi</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

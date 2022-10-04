@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/qcLOGO.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quezon City | Culture in QC</title>
+    <!-- CSS STYLE -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+      }
+      form {
+        margin-top: 5em;
+      }
+      .btn {
+        color: #fff;
+        padding: 0.8em 1.7em;
+        background: #333;
+        transition: all 1.2s;
+      }
+      .img-logo {
+        width: 80px;
+      }
+      .btn:hover,
+      .btn:focus {
+        color: #000;
+        background-color: #fff;
+      }
+      .header {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .header-container,
+      .navbar-menu,
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-text {
+        color: #fff;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .navbar-menu li {
+        margin-left: 1em;
+      }
+      nav a {
+        color: #fff;
+        transition: all 1.2s;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #b1d8b7;
+        border-bottom: 1.5px solid #fff;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+      }
+      /* title-heading */
+      .title-heading {
+        margin-top: 5em;
+        text-align: center;
+        font-size: 1.725rem;
+        font-weight: 700;
+        text-shadow: 1.9px 1px grey;
+      }
+      .culture-area {
+        text-align: center;
+      }
+      .culture-area p,
+      .culture-area h2 {
+        margin: 0 0 10px 0;
+      }
+      .food-area > h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .food-container {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+      }
+      .food-container img {
+        width: 80%;
+        height: 50%;
+      }
+      .foods-area-section {
+        background-color: #efefef;
+        padding: 3em;
+        height: 490px;
+        margin-bottom: 100px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            class="img-logo"
+            src="./assets/img/qcLOGO.png"
+            alt="quezon city logo"
+          />
+          <p class="logo-text">Quezon City</p>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-menu">
+            <li class="nav-item-list">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item-list"><a href="about.html">ABOUT</a></li>
+            <li class="nav-item-list">
+              <a href="tourism.html">TOURISM</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="culture.html">CULTURE </a>
+            </li>
+            <li class="nav-item-list">
+              <a href="Form_Exercise.html">BOOK NOW!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="title-heading">
+        <div class="container">
+          <h1>
+            History, culture, food: For gems in plain sight, revisit Quezon City
+          </h1>
+          <img src="./assets/img/hero-image.png" alt="" />
+        </div>
+      </section>
+
+      <section class="culture-area">
+        <div class="container">
+          <h2>Meet Tandang Sora</h2>
+          <p>
+            The storied past of Quezon City reaches out to other parts of the
+            city. Visit the Tandang Sora National Shrine on Banlat Road and
+            learn about the life of the “Mother of the Philippine Revolution,”
+            Melchora Aquino, better known as Tandang Sora.
+          </p>
+          <img src="./assets/img/tandang_sora.png" alt="" />
+          <p>
+            The Quezon City government had her remains reinterred in the Shrine
+            in commemoration of her 200th birthday in 2012. The Shrine also has
+            an art gallery where you can view paintings and sculptures of
+            Tandang Sora made by Filipino artists and students from all over
+            Quezon City.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="foods-area">
+        <div class="container food-area">
+          <h1>the foods</h1>
+          <div class="food-container">
+            <div class="foods-area-section">
+              <img src="./assets/img/food1.png" alt="" />
+              <p>
+                The stretch is littered with restaurants offering exciting
+                dishes from every end of the flavor spectrum. A top pick is The
+                Sweet Spot, a café run by a husband and wife team that marry
+                their love of good food and design.
+              </p>
+            </div>
+            <div class="foods-area-section">
+              <img src="./assets/img/food2.png" alt="" />
+              <p>
+                It offers an eclectic mix of Filipino, Southwestern, and
+                Oriental dishes, good for big groups who can’t seem to agree on
+                what to eat for lunch or dinner. For those craving for Filipino
+                fare, try Marciana’s famous pancit palabok and putong pandan, or
+                the pink salmon head ulo-ulo or bulalo of
+              </p>
+            </div>
+          </div>
+          <div class="food-container">
+            <div class="foods-area-section">
+              <img src="./assets/img/food1.png" alt="" />
+              <p>
+                The stretch is littered with restaurants offering exciting
+                dishes from every end of the flavor spectrum. A top pick is The
+                Sweet Spot, a café run by a husband and wife team that marry
+                their love of good food and design.
+              </p>
+            </div>
+            <div class="foods-area-section">
+              <img src="./assets/img/food2.png" alt="" />
+              <p>
+                It offers an eclectic mix of Filipino, Southwestern, and
+                Oriental dishes, good for big groups who can’t seem to agree on
+                what to eat for lunch or dinner. For those craving for Filipino
+                fare, try Marciana’s famous pancit palabok and putong pandan, or
+                the pink salmon head ulo-ulo or bulalo of
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Quezon City</p>
+    </footer>
+  </body>
+</html>
